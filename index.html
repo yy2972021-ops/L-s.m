@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story ❤️</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            color: #4a4a4a;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #d63384;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Love Counter */
+        .timer-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+
+        .time-card {
+            background: #ffe6eb;
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #d63384;
+        }
+
+        .time-card span {
+            display: block;
+            font-size: 20px;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            border-left: 3px solid #ff758c;
+            padding-left: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .timeline-item strong {
+            color: #d63384;
+        }
+
+        /* Memories Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Interactive Buttons */
+        .btn {
+            background: #ff758c;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #ff758c;
+            transform: scale(1.05);
+        }
+
+        /* Coupons & Interactive Text */
+        .interactive-box {
+            margin-top: 15px;
+            font-style: italic;
+            color: #d63384;
+            font-weight: bold;
+            min-height: 40px;
+        }
+
+        .coupons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        
+        <!-- Section 1: Live Counter -->
+        <div class="section">
+            <h2>✨ အတူတူရှိခဲ့ကြတဲ့ အချိန်များ ✨</h2>
+            <div class="timer-box">
+                <div class="time-card"><span id="days">0</span>Days</div>
+                <div class="time-card"><span id="hours">0</span>Hours</div>
+                <div class="time-card"><span id="mins">0</span>Mins</div>
+                <div class="time-card"><span id="secs">0</span>Secs</div>
+            </div>
+            <p style="margin-top: 10px; font-size: 13px;">(Since October 9, 2025 ❤️)</p>
+        </div>
+
+        <!-- Section 2: Timeline -->
+        <div class="section">
+            <h2>💗 Our Timeline</h2>
+            <div class="timeline-item">
+                <strong>September 2, 2025</strong>
+                <p>Leo Match ကနေ အမှတ်မထင် စတွေ့ခဲ့ကြတဲ့နေ့လေး ✨</p>
+            </div>
+            <div class="timeline-item">
+                <strong>October 9, 2025</strong>
+                <p>နှစ်ယောက်တစ်ကမ္ဘာ စတင်တည်ဆောက်ခဲ့ကြတဲ့ အမှတ်တရနေ့လေး! 💖</p>
+            </div>
+            <div class="timeline-item">
+                <strong>Valentine's Day</strong>
+                <p>နှစ်ယောက်တူတူ အမှတ်တရတွေ ဖန်တီးခဲ့ကြတဲ့ ချစ်သူများနေ့ 🌸</p>
+            </div>
+            <div class="timeline-item">
+                <strong>First Night Market Trip</strong>
+                <p>ပထမဆုံး ညစျေး တူတူသွားခဲ့တာလေး </p>
+            </div>
+        </div>
+
+        <!-- Section 3: Memories Gallery -->
+        <div class="section">
+            <h2>📸 Our Sweet Memories</h2>
+            <div class="gallery">
+                <img src="photo1.jpg" alt="Memory 1">
+                <img src="photo2.jpg" alt="Memory 2">
+                <img src="photo3.jpg" alt="Memory 3">
+                <img src="photo4.jpg" alt="Memory 4">
+            </div>
+        </div>
+
+        <!-- Section 4: Secret Letter -->
+        <div class="section">
+            <h2>💌 Secret Letter for You</h2>
+            <p style="text-align: left; line-height: 1.6; margin-top: 10px;">
+                ဘေဘီ့ကို သိပ်လွမ်းရင် ဒီစာလေးကို ဖတ်ပေးနော်။ အဝေးမှာ ရှိနေပေမဲ့ ဘယ်တော့မှ စိတ်မပူပါနဲ့။ ကိုကို့ဘေးမှာ ဘေဘီ အမြဲတမ်း ရှိနေပေးမှာပါ။ အမြဲတမ်း နွေးထွေးတဲ့ ရင်ခွင်လေးဖြစ်ပေးလို့ ကျေးဇူးအများကြီးတင်ပါတယ် ကိုကို! 💖✨
+            </p>
+        </div>
+
+        <!-- Section 5: Reasons Why I Love You -->
+        <div class="section">
+            <h2>💕 Reasons Why I Love You</h2>
+            <button class="btn" onclick="showReason()">Click to see why! ✨</button>
+            <div class="interactive-box" id="reason-display">ခလုတ်လေးကို နှိပ်ကြည့်ပါဦး...</div>
+        </div>
+
+        <!-- Section 6: Coupons -->
+        <div class="section">
+            <h2>🫶 Touch a Heart for Today's Coupon!</h2>
+            <div class="coupons">
+                <span onclick="openCoupon('Free Hug & Kiss Coupon 💖')">💖</span>
+                <span onclick="openCoupon('No Argument Pass Coupon 🕊️')">💗</span>
+                <span onclick="openCoupon('Late Night Call / Ice Cream Coupon 🍦')">💓</span>
+            </div>
+            <div class="interactive-box" id="coupon-display">အသည်းလေးတစ်လုံးကို နှိပ်လိုက်ပါ...</div>
+        </div>
+
+        <!-- Section 7: Final Question -->
+        <div class="section">
+            <h2>✨ Final Question ✨</h2>
+            <p style="margin-bottom: 15px;">Will you stay with me forever?</p>
+            <button class="btn" onclick="alert('I Love You Too Forever! ❤️')">Yes, Always! 💖</button>
+        </div>
+
+    </div>
+
+    <script>
+        // Love Counter Calculation
+        const startDate = new Date('2025-10-09T00:00:00');
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const mins = Math.floor((diff / 1000 / 60) % 60);
+            const secs = Math.floor((diff / 1000) % 60);
+
+            document.getElementById('days').innerText = days;
+            document.getElementById('hours').innerText = hours;
+            document.getElementById('mins').innerText = mins;
+            document.getElementById('secs').innerText = secs;
+        }
+
+        setInterval(updateCounter, 1000);
+        updateCounter();
+
+        // Reasons Array
+        const reasons = [
+            "ကိုကိုးရဲ့ အပြုံးလေးက ဘေဘီ့အတွက် အကောင်းဆုံး ခွန်အားမို့လို့ ",
+            "အမြဲတမ်း နားလည်ပေးပြီး ဂရုစိုက်ပေးလို့ ",
+            "စကားပြောလိုက်တိုင်း စိတ်ချမ်းသာစေလို့ ",
+            "အဝေးမှာရှိနေပေမဲ့ အမြဲတမ်း သစ္စာရှိပေးလို့ ",
+            "ကိုကိုးနဲ့ ပတ်သက်ရင် အရာရာ အဓိပ္ပာယ်ရှိလို့ "
+        ];
+
+        function showReason() {
+            const randomReason = reasons[Math.floor(Math.random() * reasons.length)];
+            document.getElementById('reason-display').innerText = randomReason;
+        }
+
+        // Coupon Function
+        function openCoupon(text) {
+            document.getElementById('coupon-display').innerText = "You won: " + text;
+        }
+    </script>
+</body>
+</html>
